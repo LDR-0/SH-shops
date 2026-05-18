@@ -1,0 +1,36 @@
+.product-board {
+  margin-top: 3rem;
+}
+
+.product-board h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: var(--dark-text);
+}
+
+.empty-message {
+  text-align: center;
+  color: #999;
+  font-size: 1.1rem;
+  padding: 3rem 1rem;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
